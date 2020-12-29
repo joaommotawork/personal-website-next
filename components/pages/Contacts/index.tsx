@@ -39,7 +39,7 @@ const Contacts = ({ t }) => {
     return (
         <div
             id="Contacts"
-            className={`relative min-h-20 bg-background-pattern bg-fixed bg-cover flex flex-col items-center justify-center px-32 pb-32`}>
+            className={`relative bg-background-pattern bg-fixed bg-cover flex flex-col items-center justify-center p-5 md:px-32 pb-32`}>
             <form
                 className="w-full flex flex-col"
                 onSubmit={handleSubmit(onSubmit)}>

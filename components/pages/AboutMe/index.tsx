@@ -5,11 +5,11 @@ import Layout from '../../general/Layout'
 
 const AboutMe = ({ t }) => {
     return (
-        <div className="relative mt-64 bg-gray-100">
+        <div className="h-full relative mt-64 bg-gray-100">
             <Layout>
                 <div
                     id="AboutMe"
-                    className="h-screen w-full flex flex-col items-center justify-center">
+                    className="min-h-screen w-full flex flex-col items-center justify-center">
                     <div className="flex flex-col 2xl:flex-row items-center justify-center">
                         <div className="flex flex-col w-full">
                             <div className="flex flex-col py-5">

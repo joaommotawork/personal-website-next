@@ -8,7 +8,7 @@ const Portfolio = ({ t }) => {
         <Layout>
             <div
                 id="Portfolio"
-                className="h-screen w-full flex flex-col items-center justify-center">
+                className="min-h-screen w-full flex flex-col items-center justify-center">
                 <div className="h-4/5 w-full grid grid-cols-3 gap-10 py-5">
                     <div
                         className={`min-h-full bg-background-pattern
