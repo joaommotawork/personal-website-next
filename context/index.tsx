@@ -9,7 +9,10 @@ const initialState = {
 }
 
 // Create Context
-const Context = createContext({})
+const Context = createContext<{
+    state?: any
+    dispatch?: React.Dispatch<any>
+}>({})
 
 // Combine Reducer Function
 const combineReducers = (...reducers) => (state, action) => {
