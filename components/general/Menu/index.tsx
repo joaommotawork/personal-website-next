@@ -22,6 +22,7 @@ const MenuHOC = ({ children, t }) => {
 
     const changeLanguage = (event) => {
         i18n.changeLanguage(event.target.innerText.toLowerCase())
+        handleOnClose()
     }
 
     const paths = [
