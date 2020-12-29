@@ -1,0 +1,53 @@
+{
+    "Header": {},
+    "Menu": {
+        "Home": "Home",
+        "AboutMe": "About Me",
+        "Skills": "Skills",
+        "Portfolio": "Portfolio",
+        "Gallery": "Gallery",
+        "Blog": "Blog",
+        "Contacts": "Contacts"
+    },
+    "Home": {
+        "Text1": "Hi,",
+        "Text2": "my name is",
+        "Text3": "I'm a Full-Stack Web Developer Specializing in Front-End & Design, That's passionate about bringing new experiences to more people.",
+        "ContactMe": "Contact Me"
+    },
+    "AboutMe": {
+        "EducationWork": "Education & Work",
+        "EducationWork1": "I'm from Portugal, I'm currently studying Computer Programming at ISTEC - Instituto Superior de Tecnologias Avançadas and working as a consultant at DECODE.",
+        "EducationWork2": "I'm planning to move away from Portugal and work in another country after I finish College, it's a big goal for me!",
+        "Principles": "Principles",
+        "Principles1": "I'm an ambitious, punctual, hardworking and a innovative person that fits well into every environment and culture.",
+        "Principles2": "In addition I also have excellent organizational, management and planning skills.",
+        "Fun": "Fun",
+        "Fun1": "Some of my passions/hobbies are: Skate, Surf, Judo, Calisthenics, Yoga, Music and much more...",
+        "Fun2": "I consider my self an Adventurer that loves meeting new places and new people, i'm always open to new experiences."
+    },
+    "Skills": {
+        "Developer": "Developer",
+        "Designer": "Designer",
+        "Other": "Other"
+    },
+    "Portfolio": {},
+    "Gallery": {},
+    "Blog": {},
+    "Contacts": {
+        "Name": "Name",
+        "E-Mail": "E-Mail",
+        "Subject": "Subject",
+        "Freelance": "Freelance",
+        "Company": "Company",
+        "Other": "Other",
+        "Message": "Message",
+        "Send": "Send",
+        "BuyCoffee": "Buy me a Coffee!",
+        "CVDownload": "Curriculum Vitae Download",
+        "Newsletter": "Newsletter",
+        "FieldRequired": "Field Required!",
+        "Success": "Success",
+        "FormSuccess": "Form Submitted Successfully!"
+    }
+}

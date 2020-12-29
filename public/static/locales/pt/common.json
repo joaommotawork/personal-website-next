@@ -1,0 +1,53 @@
+{
+    "Header": {},
+    "Menu": {
+        "Home": "Ínicio",
+        "AboutMe": "Sobre Mim",
+        "Skills": "Competências",
+        "Portfolio": "Portfolio",
+        "Gallery": "Galeria",
+        "Blog": "Blog",
+        "Contacts": "Contactos"
+    },
+    "Home": {
+        "Text1": "Olá,",
+        "Text2": "o meu nome é",
+        "Text3": "Eu sou um Desenvolvedor Web focado em Front-End & Design, a minha paixão é trazer novas experiências a mais pessoas.",
+        "ContactMe": "Contacte-me"
+    },
+    "AboutMe": {
+        "EducationWork": "Educação & Trabalho",
+        "EducationWork1": "Sou de Portugal, estou a estudar Engenharia Informática no ISTEC - Instituto Superior de Tecnologias Avançadas e a trabalhar como consultor na DECODE.",
+        "EducationWork2": "Estou a planear emigrar para fora de Portugal e trabalhar para outro país depois de acabar a Faculdade, é um grande objetivo meu!",
+        "Principles": "Príncipios",
+        "Principles1": "Sou uma pessoas ambiciosa, pontual, trabalhadora e inovadora que se encaixa bem em qualquer tipo de ambiente e cultura.",
+        "Principles2": "Além disso, também tenho excelentes habilidades organizacionais, de gestão e de planeamento.",
+        "Fun": "Diversão",
+        "Fun1": "Algumas das minhas paixões/hobbies são: Skate, Surf, Judo, Calistenia, Yoga, Música entre outros...",
+        "Fun2": "Considero-me uma pessoa aventureira que adora conhecer novos sítios e novas pessoas, estou sempre pronto para novas experiências."
+    },
+    "Skills": {
+        "Developer": "Developer",
+        "Designer": "Designer",
+        "Other": "Outros"
+    },
+    "Portfolio": {},
+    "Gallery": {},
+    "Blog": {},
+    "Contacts": {
+        "Name": "Nome",
+        "E-Mail": "E-Mail",
+        "Subject": "Assunto",
+        "Freelance": "Freelance",
+        "Company": "Empresa",
+        "Other": "Outro",
+        "Message": "Mensagem",
+        "Send": "Enviar",
+        "BuyCoffee": "Buy me a Coffee!",
+        "CVDownload": "Curriculum Vitae Download",
+        "Newsletter": "Newsletter",
+        "FieldRequired": "Campo Necessário!",
+        "Success": "Sucesso",
+        "FormSuccess": "Formulário Enviado com Sucesso!"
+    }
+}
