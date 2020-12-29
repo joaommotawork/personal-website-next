@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import '../styles/menuStyles.css'
+import 'tailwindcss/tailwind.css'
 
 import Head from 'next/head'
 
