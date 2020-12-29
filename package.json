@@ -20,7 +20,6 @@
         "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
     },
     "dependencies": {
-        "@svgr/webpack": "^5.5.0",
         "airtable": "^0.10.1",
         "next": "10.0.3",
         "next-i18next": "^7.0.1",

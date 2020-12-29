@@ -1,17 +1,14 @@
 import Image from 'next/image'
-import { useRouter } from 'next/router'
 import { useContext } from 'react'
 import { stack as Menu } from 'react-burger-menu'
+import { animateScroll as scroll, Link as ScrollLink } from 'react-scroll'
 
 import { Context } from '../../../context'
 import useWindowSize from '../../../hooks/useWindowSize'
 import { i18n, withTranslation } from '../../../i18n'
 import Header from '../Header'
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 
 const MenuHOC = ({ children, t }) => {
-    const router = useRouter()
-
     const size = useWindowSize()
 
     const { state, dispatch } = useContext(Context)

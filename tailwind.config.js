@@ -1,9 +1,9 @@
 module.exports = {
-    purge: [],
+    purge: ['./components//*.{js,ts,jsx,tsx}', './pages//*.{js,ts,jsx,tsx}'],
     darkMode: 'class', // or 'media' or 'class'
     theme: {
         extend: {
-            backgroundImage: (theme) => ({
+            backgroundImage: () => ({
                 'background-pattern': "url('/static/images/Default.svg')"
             })
         },

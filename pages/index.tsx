@@ -1,21 +1,21 @@
+import { GetServerSideProps } from 'next'
+// import Image from 'next/image'
+import { FC, ReactElement, useContext } from 'react'
+import { animateScroll as scroll, Link } from 'react-scroll'
+import VisibilitySensor from 'react-visibility-sensor'
+
 import MenuHOC from '../components/general/Menu'
 import AboutMe from '../components/pages/AboutMe'
-import Blog from '../components/pages/Blog'
-import Gallery from '../components/pages/Gallery'
-import Home from '../components/pages/Home'
-import Portfolio from '../components/pages/Portfolio'
+// import Blog from '../components/pages/Blog'
 import Contacts from '../components/pages/Contacts'
+// import Gallery from '../components/pages/Gallery'
+import Home from '../components/pages/Home'
+// import Portfolio from '../components/pages/Portfolio'
 import Skills from '../components/pages/Skills'
-import { Link, animateScroll as scroll } from 'react-scroll'
-import VisibilitySensor from 'react-visibility-sensor'
-import { useContext } from 'react'
 import { Context } from '../context'
-import Image from 'next/image'
 
-const Index = () => {
+const Index: FC = (): ReactElement => {
     const { state, dispatch } = useContext(Context)
-
-    console.log(state)
 
     const onVisibility = (section) => {
         if (!state.menuItem.includes(section)) {
@@ -101,7 +101,7 @@ const Index = () => {
     )
 }
 
-export async function getServerSideProps(context) {
+export const getServerSideProps: GetServerSideProps = async () => {
     try {
         const res = await fetch(`http://localhost:3000/api/getContactMe`)
         const data = await res.json()
