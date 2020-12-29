@@ -3,15 +3,71 @@ import '../styles/menuStyles.css'
 import 'tailwindcss/tailwind.css'
 
 import Head from 'next/head'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
 import { Provider } from '../context'
 import { appWithTranslation } from '../i18n'
+import * as gtag from '../lib/gtag'
 
 const App = ({ Component, pageProps }) => {
+    const router = useRouter()
+
+    useEffect(() => {
+        const handleRouteChange = (url: URL) => {
+            gtag.pageview(url)
+        }
+        router.events.on('routeChangeComplete', handleRouteChange)
+        return () => {
+            router.events.off('routeChangeComplete', handleRouteChange)
+        }
+    }, [router.events])
+
     return (
         <Provider>
             <Head>
+                {/* <!-- Primary Meta Tags --> */}
                 <title>João M. Mota Developer</title>
+                <meta
+                    name="viewport"
+                    content="initial-scale=1.0, width=device-width"
+                />
+                <meta name="title" content="João M. Mota Developer" />
+                <meta
+                    name="description"
+                    content="I'M A FULL-STACK WEB DEVELOPER SPECIALIZING IN FRONT-END & DESIGN, THAT'S PASSIONATE ABOUT BRINGING NEW EXPERIENCES TO MORE PEOPLE."
+                />
+
+                {/* <!-- Open Graph / Facebook --> */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://joaommota.com/" />
+                <meta property="og:title" content="João M. Mota Developer" />
+                <meta
+                    property="og:description"
+                    content="I'M A FULL-STACK WEB DEVELOPER SPECIALIZING IN FRONT-END & DESIGN, THAT'S PASSIONATE ABOUT BRINGING NEW EXPERIENCES TO MORE PEOPLE."
+                />
+                <meta
+                    property="og:image"
+                    content="/static/images/DefaultLogo.png"
+                />
+
+                {/* <!-- Twitter --> */}
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://joaommota.com/" />
+                <meta
+                    property="twitter:title"
+                    content="João M. Mota Developer"
+                />
+                <meta
+                    property="twitter:description"
+                    content="I'M A FULL-STACK WEB DEVELOPER SPECIALIZING IN FRONT-END & DESIGN, THAT'S PASSIONATE ABOUT BRINGING NEW EXPERIENCES TO MORE PEOPLE."
+                />
+                <meta
+                    property="twitter:image"
+                    content="/static/images/DefaultLogo.png"
+                />
+
+                {/* <!-- Other --> */}
                 <link rel="icon" href="/favicon.ico" />
                 <link
                     rel="apple-touch-icon"

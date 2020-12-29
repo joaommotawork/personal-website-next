@@ -24,22 +24,22 @@ const Home = ({ t }) => {
                         {t('Home.Text3')}
                     </div>
                     <ScrollLink to="Contacts">
-                            <div className="w-44 flex bg-red-600 h-10 md:h-12 my-5 items-center justify-center md:w-52 cursor-pointer">
-                                <div className="flex w-full items-center justify-center">
-                                    <div className="font-open font-bold text-base text-white uppercase md:text-xl text-center">
-                                        {t('Home.ContactMe')}
-                                    </div>
-                                    <div className="flex w-10 pl-5 items-center justify-center">
-                                        <Image
-                                            src="/static/icons/white/chevron-circle-right.svg"
-                                            alt="Contact Me"
-                                            width={25}
-                                            height={25}
-                                            priority
-                                        />
-                                    </div>
+                        <div className="w-44 flex bg-red-600 h-10 md:h-12 my-5 items-center justify-center md:w-52 cursor-pointer">
+                            <div className="flex w-full items-center justify-center">
+                                <div className="font-open font-bold text-base text-white uppercase md:text-xl text-center">
+                                    {t('Home.ContactMe')}
+                                </div>
+                                <div className="flex w-10 pl-5 items-center justify-center">
+                                    <Image
+                                        src="/static/icons/white/chevron-circle-right.svg"
+                                        alt="Contact Me"
+                                        width={25}
+                                        height={25}
+                                        priority
+                                    />
                                 </div>
                             </div>
+                        </div>
                     </ScrollLink>
                 </div>
                 <div className="flex items-center justify-center w-full">
