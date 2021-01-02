@@ -8,7 +8,7 @@ const Gallery = ({ t }) => {
         <Layout>
             <div
                 id="Gallery"
-                className="min-h-screen w-full flex flex-col items-center justify-center">
+                className="flex flex-col items-center justify-center w-full min-h-screen">
                 <Image
                     src="https://source.unsplash.com/2ShvY8Lf6l0/800x599"
                     alt="Logo"

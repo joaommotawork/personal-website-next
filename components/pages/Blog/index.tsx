@@ -8,7 +8,7 @@ const Blog = ({ t }) => {
         <Layout>
             <div
                 id="Blog"
-                className="min-h-screen w-full flex flex-col items-center justify-center"></div>
+                className="flex flex-col items-center justify-center w-full min-h-screen"></div>
         </Layout>
     )
 }

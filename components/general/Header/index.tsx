@@ -13,7 +13,7 @@ const Header = () => {
 
     return (
         <div className="flex" id="Header">
-            <div className="w-28 flex justify-between items-center md:w-1/2">
+            <div className="flex items-center justify-between w-28 md:w-1/2">
                 <Image
                     src={'/static/logo/Logo_White.svg'}
                     alt="Logo"
@@ -22,15 +22,15 @@ const Header = () => {
                     priority
                 />
             </div>
-            <div className="flex justify-center items-center ml-auto">
-                <div className="hidden justify-center items-center lg:flex">
+            <div className="flex items-center justify-center ml-auto">
+                <div className="hidden items-center justify-center lg:flex">
                     <button
-                        className="text-white mx-5"
+                        className="mx-5 text-white"
                         onClick={(e) => changeLanguage(e)}>
                         PT
                     </button>
                     <button
-                        className="text-white mx-5"
+                        className="mx-5 text-white"
                         onClick={(e) => changeLanguage(e)}>
                         EN
                     </button>
@@ -41,7 +41,7 @@ const Header = () => {
                         href="https://github.com/joaommotawork"
                         target="_blank"
                         rel="noreferrer"
-                        className="mx-3 cursor-pointer w-1/2">
+                        className="mx-3 w-1/2 cursor-pointer">
                         <Image
                             src={'/static/icons/white/github.svg'}
                             alt="GitHub"
@@ -55,7 +55,7 @@ const Header = () => {
                         href="https://www.linkedin.com/in/joaommota/"
                         target="_blank"
                         rel="noreferrer"
-                        className="mx-3 cursor-pointer w-1/2">
+                        className="mx-3 w-1/2 cursor-pointer">
                         <Image
                             src={'/static/icons/white/linkedin-in.svg'}
                             alt="LinkedIn"
@@ -69,7 +69,7 @@ const Header = () => {
                         href="https://www.instagram.com/joaommota.work/"
                         target="_blank"
                         rel="noreferrer"
-                        className="mx-3 cursor-pointer w-1/2">
+                        className="mx-3 w-1/2 cursor-pointer">
                         <Image
                             src={'/static/icons/white/instagram.svg'}
                             alt="Instagram"
@@ -81,7 +81,7 @@ const Header = () => {
                     </a>
                 </div>
                 <button
-                    className="flex justify-between items-center px-10"
+                    className="flex items-center justify-between px-10"
                     onClick={() =>
                         dispatch({
                             type: 'MENU_IS_OPEN',

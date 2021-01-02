@@ -81,7 +81,7 @@ const Index: FC = (): ReactElement => {
                 }}
             </VisibilitySensor>
             {!state.menuItem.includes('Home') && (
-                <div className="fixed right-5 bottom-5 cursor-pointer">
+                <div className="fixed bottom-5 right-5 cursor-pointer">
                     <Link to="outer-container">
                         <svg
                             width="51"

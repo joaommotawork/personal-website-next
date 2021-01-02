@@ -38,7 +38,7 @@ const MenuHOC = ({ children, t }) => {
         return (
             <button
                 onClick={handleOnClose}
-                className="w-full py-3 uppercase text-4xl text-center relative">
+                className="relative py-3 w-full text-center text-4xl uppercase">
                 {children}
             </button>
         )
@@ -120,12 +120,12 @@ const MenuHOC = ({ children, t }) => {
                         <div className="flex flex-col content-between items-center lg:hidden">
                             <div>
                                 <button
-                                    className="text-white px-5"
+                                    className="px-5 text-white"
                                     onClick={(e) => changeLanguage(e)}>
                                     PT
                                 </button>
                                 <button
-                                    className="text-white px-5"
+                                    className="px-5 text-white"
                                     onClick={(e) => changeLanguage(e)}>
                                     EN
                                 </button>
@@ -138,7 +138,7 @@ const MenuHOC = ({ children, t }) => {
                                     href="https://github.com/joaommotawork"
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="mx-3 cursor-pointer w-1/2">
+                                    className="mx-3 w-1/2 cursor-pointer">
                                     <Image
                                         src="/static/icons/white/github.svg"
                                         alt="GitHub"
@@ -151,7 +151,7 @@ const MenuHOC = ({ children, t }) => {
                                     href="https://www.linkedin.com/in/joaommota/"
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="mx-3 cursor-pointer w-1/2">
+                                    className="mx-3 w-1/2 cursor-pointer">
                                     <Image
                                         src="/static/icons/white/linkedin-in.svg"
                                         alt="LinkedIn"
@@ -164,7 +164,7 @@ const MenuHOC = ({ children, t }) => {
                                     href="https://www.instagram.com/joaommota.work/"
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="mx-3 cursor-pointer w-1/2">
+                                    className="mx-3 w-1/2 cursor-pointer">
                                     <Image
                                         src="/static/icons/white/instagram.svg"
                                         alt="Instagram"

@@ -5,18 +5,18 @@ import Layout from '../../general/Layout'
 
 const Skills = ({ t }) => {
     return (
-        <div className="h-full relative mb-64 bg-gray-100">
+        <div className="relative mb-64 h-full bg-gray-100">
             <Layout>
                 <div
                     id="Skills"
-                    className="min-h-screen w-full flex flex-col items-center justify-center">
+                    className="flex flex-col items-center justify-center w-full min-h-screen">
                     <div className="flex flex-col w-full">
                         <div className="flex flex-col py-5">
-                            <div className="text-red-600 text-xl md:text-4xl uppercase font-bold">
+                            <div className="text-red-600 text-xl font-bold uppercase md:text-4xl">
                                 {t('Skills.Developer')}
                             </div>
-                            <div className="grid grid-cols-3 sm:grid-cols-4 xl:grid-cols-7 gap-10 py-5">
-                                <div className="flex justify-center items-center">
+                            <div className="grid gap-10 grid-cols-3 py-5 sm:grid-cols-4 xl:grid-cols-7">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={'/static/icons/black/js.svg'}
                                         alt="JS"
@@ -25,7 +25,7 @@ const Skills = ({ t }) => {
                                         layout="fixed"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={'/static/icons/black/python.svg'}
                                         alt="Python"
@@ -34,7 +34,7 @@ const Skills = ({ t }) => {
                                         layout="fixed"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={'/static/icons/black/react.svg'}
                                         alt="React"
@@ -43,7 +43,7 @@ const Skills = ({ t }) => {
                                         layout="fixed"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={'/static/icons/black/node-js.svg'}
                                         alt="NodeJS"
@@ -52,7 +52,7 @@ const Skills = ({ t }) => {
                                         layout="fixed"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={'/static/icons/black/html5.svg'}
                                         alt="HTML5"
@@ -61,7 +61,7 @@ const Skills = ({ t }) => {
                                         layout="fixed"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={'/static/icons/black/css3-alt.svg'}
                                         alt="CSS3"
@@ -70,7 +70,7 @@ const Skills = ({ t }) => {
                                         layout="fixed"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={'/static/icons/black/sass.svg'}
                                         alt="SASS"
@@ -79,7 +79,7 @@ const Skills = ({ t }) => {
                                         layout="fixed"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={'/static/icons/black/java.svg'}
                                         alt="Java"
@@ -88,7 +88,7 @@ const Skills = ({ t }) => {
                                         layout="fixed"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={
                                             '/static/icons/black/MongoDB-01 1.svg'
@@ -99,7 +99,7 @@ const Skills = ({ t }) => {
                                         layout="fixed"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={
                                             '/static/icons/black/Postgres-01 1.svg'
@@ -113,11 +113,11 @@ const Skills = ({ t }) => {
                             </div>
                         </div>
                         <div className="flex flex-col py-5">
-                            <div className="text-red-600 text-xl md:text-4xl uppercase font-bold">
+                            <div className="text-red-600 text-xl font-bold uppercase md:text-4xl">
                                 {t('Skills.Designer')}
                             </div>
-                            <div className="grid grid-cols-3 sm:grid-cols-4 xl:grid-cols-7 gap-10 py-5">
-                                <div className="flex justify-center items-center">
+                            <div className="grid gap-10 grid-cols-3 py-5 sm:grid-cols-4 xl:grid-cols-7">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={'/static/icons/black/figma.svg'}
                                         alt="Figma"
@@ -126,7 +126,7 @@ const Skills = ({ t }) => {
                                         layout="fixed"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={
                                             '/static/icons/black/Illustrator_8. Illustrator 1.svg'
@@ -137,7 +137,7 @@ const Skills = ({ t }) => {
                                         layout="fixed"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={
                                             '/static/icons/black/Photoshop_17. Photoshop 1.svg'
@@ -148,7 +148,7 @@ const Skills = ({ t }) => {
                                         layout="fixed"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={
                                             '/static/icons/black/Lightroom Classic_Lightroom Classic 1.svg'
@@ -159,7 +159,7 @@ const Skills = ({ t }) => {
                                         layout="fixed"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={
                                             '/static/icons/black/Premiere Pro_5 Premiere Pro 1.svg'
@@ -170,7 +170,7 @@ const Skills = ({ t }) => {
                                         layout="fixed"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={
                                             '/static/icons/black/After Effects_2 After Effects 1.svg'
@@ -184,11 +184,11 @@ const Skills = ({ t }) => {
                             </div>
                         </div>
                         <div className="flex flex-col py-5">
-                            <div className="text-red-600 text-xl md:text-4xl uppercase font-bold">
+                            <div className="text-red-600 text-xl font-bold uppercase md:text-4xl">
                                 {t('Skills.Other')}
                             </div>
-                            <div className="grid grid-cols-3 sm:grid-cols-4 xl:grid-cols-7 gap-10 py-5">
-                                <div className="flex justify-center items-center">
+                            <div className="grid gap-10 grid-cols-3 py-5 sm:grid-cols-4 xl:grid-cols-7">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={'/static/icons/black/jira.svg'}
                                         alt="Jira"
@@ -197,7 +197,7 @@ const Skills = ({ t }) => {
                                         layout="fixed"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={'/static/icons/black/trello.svg'}
                                         alt="Trello"
@@ -206,7 +206,7 @@ const Skills = ({ t }) => {
                                         layout="fixed"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={'/static/icons/black/slack.svg'}
                                         alt="Slack"
@@ -215,7 +215,7 @@ const Skills = ({ t }) => {
                                         layout="fixed"
                                     />
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex items-center justify-center">
                                     <Image
                                         src={'/static/icons/black/discord.svg'}
                                         alt="Discord"
@@ -229,7 +229,7 @@ const Skills = ({ t }) => {
                     </div>
                 </div>
             </Layout>
-            <div className="w-full min-w-screen absolute -bottom-64">
+            <div className="min-w-screen absolute -bottom-64 w-full">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     preserveAspectRatio="none"

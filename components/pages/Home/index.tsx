@@ -9,27 +9,27 @@ const Home = ({ t }) => {
         <Layout>
             <div
                 id="Home"
-                className="h-full w-full flex flex-col 2xl:flex-row items-center justify-center md:pt-0">
+                className="flex flex-col 2xl:flex-row items-center justify-center w-full h-full md:pt-0">
                 <div className="flex flex-col w-full">
-                    <div className="text-2xl font-bold text-white uppercase md:text-6xl py-3 md:py-5">
+                    <div className="py-3 text-white text-2xl font-bold uppercase md:py-5 md:text-6xl">
                         {t('Home.Text1')}
                     </div>
-                    <div className="text-2xl font-bold text-white uppercase md:text-6xl py-3 md:py-5">
+                    <div className="py-3 text-white text-2xl font-bold uppercase md:py-5 md:text-6xl">
                         {t('Home.Text2')}
                     </div>
-                    <div className="text-2xl font-bold text-red-600 uppercase md:text-6xl py-3 md:py-5">
+                    <div className="py-3 text-red-600 text-2xl font-bold uppercase md:py-5 md:text-6xl">
                         João Mota
                     </div>
-                    <div className="font-open text-base text-white uppercase py-3 w-full md:py-5 md:text-xl md:w-full">
+                    <div className="py-3 w-full text-white font-open text-base uppercase md:py-5 md:w-full md:text-xl">
                         {t('Home.Text3')}
                     </div>
                     <ScrollLink to="Contacts">
-                        <div className="w-44 flex bg-red-600 h-10 md:h-12 my-5 items-center justify-center md:w-52 cursor-pointer">
-                            <div className="flex w-full items-center justify-center">
-                                <div className="font-open font-bold text-base text-white uppercase md:text-xl text-center">
+                        <div className="flex items-center justify-center my-5 w-44 h-10 bg-red-600 cursor-pointer md:w-52 md:h-12">
+                            <div className="flex items-center justify-center w-full">
+                                <div className="text-center text-white font-open text-base font-bold uppercase md:text-xl">
                                     {t('Home.ContactMe')}
                                 </div>
-                                <div className="flex w-10 pl-5 items-center justify-center">
+                                <div className="flex items-center justify-center pl-5 w-10">
                                     <Image
                                         src="/static/icons/white/chevron-circle-right.svg"
                                         alt="Contact Me"

@@ -41,12 +41,12 @@ const Contacts = ({ t }) => {
             id="Contacts"
             className={`relative bg-background-pattern bg-fixed bg-cover flex flex-col items-center justify-center p-5 md:px-32 pb-32`}>
             <form
-                className="w-full flex flex-col"
+                className="flex flex-col w-full"
                 onSubmit={handleSubmit(onSubmit)}>
-                <div className="w-full flex flex-col md:flex-row">
-                    <div className="w-full flex-col">
+                <div className="flex flex-col w-full md:flex-row">
+                    <div className="flex-col w-full">
                         <div className="w-full md:pr-3">
-                            <label className="font-open block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                            <label className="block mb-2 text-white font-open text-xs font-bold tracking-wide uppercase">
                                 {t('Contacts.Name')}{' '}
                                 {errors.Name && (
                                     <span className="text-red-600 text-xs italic">
@@ -64,7 +64,7 @@ const Contacts = ({ t }) => {
                             />
                         </div>
                         <div className="w-full md:pr-3">
-                            <label className="font-open block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                            <label className="block mb-2 text-white font-open text-xs font-bold tracking-wide uppercase">
                                 {t('Contacts.E-Mail')}{' '}
                                 {errors['E-Mail'] && (
                                     <span className="text-red-600 text-xs italic">
@@ -82,7 +82,7 @@ const Contacts = ({ t }) => {
                             />
                         </div>
                         <div className="w-full md:pr-3">
-                            <label className="font-open block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                            <label className="block mb-2 text-white font-open text-xs font-bold tracking-wide uppercase">
                                 {t('Contacts.Subject')}{' '}
                                 {errors.Subject && (
                                     <span className="text-red-600 text-xs italic">
@@ -100,8 +100,8 @@ const Contacts = ({ t }) => {
                             />
                         </div>
                     </div>
-                    <div className="w-full md:pl-3 mb-9">
-                        <label className="font-open block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                    <div className="mb-9 w-full md:pl-3">
+                        <label className="block mb-2 text-white font-open text-xs font-bold tracking-wide uppercase">
                             {t('Contacts.Message')}{' '}
                             {errors.Name && (
                                 <span className="text-red-600 text-xs italic">
@@ -120,10 +120,10 @@ const Contacts = ({ t }) => {
                     </div>
                 </div>
                 {isSuccessfullySubmitted && (
-                    <div className="text-center mt-3">
+                    <div className="mt-3 text-center">
                         <div className="p-2">
-                            <div className="font-open inline-flex items-center bg-green-500 leading-none text-white rounded-full p-2 shadow text-teal text-sm">
-                                <span className="inline-flex bg-green-300 text-white rounded-full h-6 px-3 justify-center items-center">
+                            <div className="text-teal inline-flex items-center p-2 text-white font-open text-sm leading-none bg-green-500 rounded-full shadow">
+                                <span className="inline-flex items-center justify-center px-3 h-6 text-white bg-green-300 rounded-full">
                                     {t('Contacts.Success')}
                                 </span>
                                 <span className="inline-flex px-2">
@@ -134,7 +134,7 @@ const Contacts = ({ t }) => {
                     </div>
                 )}
                 <button
-                    className="font-open uppercase w-full bg-red-600 text-white font-bold mt-5 py-2 px-4"
+                    className="mt-5 px-4 py-2 w-full text-white font-open font-bold bg-red-600 uppercase"
                     type="submit">
                     {t('Contacts.Send')}
                 </button>

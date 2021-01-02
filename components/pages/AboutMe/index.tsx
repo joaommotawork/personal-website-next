@@ -5,43 +5,43 @@ import Layout from '../../general/Layout'
 
 const AboutMe = ({ t }) => {
     return (
-        <div className="h-full relative mt-64 bg-gray-100">
+        <div className="relative mt-64 h-full bg-gray-100">
             <Layout>
                 <div
                     id="AboutMe"
-                    className="min-h-screen w-full flex flex-col items-center justify-center">
+                    className="flex flex-col items-center justify-center w-full min-h-screen">
                     <div className="flex flex-col 2xl:flex-row items-center justify-center">
                         <div className="flex flex-col w-full">
                             <div className="flex flex-col py-5">
-                                <div className="text-red-600 text-xl md:text-4xl uppercase font-bold">
+                                <div className="text-red-600 text-xl font-bold uppercase md:text-4xl">
                                     {t('AboutMe.EducationWork')}
                                 </div>
-                                <div className="font-open text-black text-base md:text-xl uppercase">
+                                <div className="text-black font-open text-base uppercase md:text-xl">
                                     {t('AboutMe.EducationWork1')}
                                 </div>
-                                <div className="font-open text-black text-base md:text-xl uppercase">
+                                <div className="text-black font-open text-base uppercase md:text-xl">
                                     {t('AboutMe.EducationWork2')}
                                 </div>
                             </div>
                             <div className="flex flex-col py-5">
-                                <div className="text-red-600 text-xl md:text-4xl uppercase font-bold">
+                                <div className="text-red-600 text-xl font-bold uppercase md:text-4xl">
                                     {t('AboutMe.Principles')}
                                 </div>
-                                <div className="font-open text-black text-base md:text-xl uppercase">
+                                <div className="text-black font-open text-base uppercase md:text-xl">
                                     {t('AboutMe.Principles1')}
                                 </div>
-                                <div className="font-open text-black text-base md:text-xl uppercase">
+                                <div className="text-black font-open text-base uppercase md:text-xl">
                                     {t('AboutMe.Principles2')}
                                 </div>
                             </div>
                             <div className="flex flex-col py-5">
-                                <div className="text-red-600 text-xl md:text-4xl uppercase font-bold">
+                                <div className="text-red-600 text-xl font-bold uppercase md:text-4xl">
                                     {t('AboutMe.Fun')}
                                 </div>
-                                <div className="font-open text-black text-base md:text-xl uppercase">
+                                <div className="text-black font-open text-base uppercase md:text-xl">
                                     {t('AboutMe.Fun1')}
                                 </div>
-                                <div className="font-open text-black text-base md:text-xl uppercase">
+                                <div className="text-black font-open text-base uppercase md:text-xl">
                                     {t('AboutMe.Fun2')}
                                 </div>
                             </div>
@@ -58,7 +58,7 @@ const AboutMe = ({ t }) => {
                     </div>
                 </div>
             </Layout>
-            <div className="min-w-full absolute -top-64">
+            <div className="absolute -top-64 min-w-full">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     preserveAspectRatio="none"
