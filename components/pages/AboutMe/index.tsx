@@ -5,43 +5,43 @@ import Layout from '../../general/Layout'
 
 const AboutMe = ({ t }) => {
     return (
-        <div className="relative mt-64 h-full bg-gray-100">
+        <div className="relative h-full mt-64 bg-gray-100">
             <Layout>
                 <div
                     id="AboutMe"
                     className="flex flex-col items-center justify-center w-full min-h-screen">
-                    <div className="flex flex-col 2xl:flex-row items-center justify-center">
+                    <div className="flex flex-col items-center justify-center 2xl:flex-row">
                         <div className="flex flex-col w-full">
                             <div className="flex flex-col py-5">
-                                <div className="text-red-600 text-xl font-bold uppercase md:text-4xl">
+                                <div className="text-xl font-bold text-red-600 uppercase md:text-4xl">
                                     {t('AboutMe.EducationWork')}
                                 </div>
-                                <div className="text-black font-open text-base uppercase md:text-xl">
+                                <div className="text-base text-black uppercase font-open md:text-xl">
                                     {t('AboutMe.EducationWork1')}
                                 </div>
-                                <div className="text-black font-open text-base uppercase md:text-xl">
+                                <div className="text-base text-black uppercase font-open md:text-xl">
                                     {t('AboutMe.EducationWork2')}
                                 </div>
                             </div>
                             <div className="flex flex-col py-5">
-                                <div className="text-red-600 text-xl font-bold uppercase md:text-4xl">
+                                <div className="text-xl font-bold text-red-600 uppercase md:text-4xl">
                                     {t('AboutMe.Principles')}
                                 </div>
-                                <div className="text-black font-open text-base uppercase md:text-xl">
+                                <div className="text-base text-black uppercase font-open md:text-xl">
                                     {t('AboutMe.Principles1')}
                                 </div>
-                                <div className="text-black font-open text-base uppercase md:text-xl">
+                                <div className="text-base text-black uppercase font-open md:text-xl">
                                     {t('AboutMe.Principles2')}
                                 </div>
                             </div>
                             <div className="flex flex-col py-5">
-                                <div className="text-red-600 text-xl font-bold uppercase md:text-4xl">
+                                <div className="text-xl font-bold text-red-600 uppercase md:text-4xl">
                                     {t('AboutMe.Fun')}
                                 </div>
-                                <div className="text-black font-open text-base uppercase md:text-xl">
+                                <div className="text-base text-black uppercase font-open md:text-xl">
                                     {t('AboutMe.Fun1')}
                                 </div>
-                                <div className="text-black font-open text-base uppercase md:text-xl">
+                                <div className="text-base text-black uppercase font-open md:text-xl">
                                     {t('AboutMe.Fun2')}
                                 </div>
                             </div>
@@ -58,7 +58,7 @@ const AboutMe = ({ t }) => {
                     </div>
                 </div>
             </Layout>
-            <div className="absolute -top-64 min-w-full">
+            <div className="absolute min-w-full -top-80">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     preserveAspectRatio="none"
