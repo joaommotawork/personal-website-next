@@ -38,6 +38,18 @@ const App = ({ Component, pageProps }) => {
                     content="I'M A FULL-STACK WEB DEVELOPER SPECIALIZING IN FRONT-END & DESIGN, THAT'S PASSIONATE ABOUT BRINGING NEW EXPERIENCES TO MORE PEOPLE."
                 />
 
+                {/* <!-- Open Graph / Linkedin --> */}
+                <meta property="og:title" content="João M. Mota Developer" />
+                <meta
+                    property="og:image"
+                    content="/static/images/DefaultLogo.png"
+                />
+                <meta
+                    property="og:description"
+                    content="I'M A FULL-STACK WEB DEVELOPER SPECIALIZING IN FRONT-END & DESIGN, THAT'S PASSIONATE ABOUT BRINGING NEW EXPERIENCES TO MORE PEOPLE."
+                />
+                <meta property="og:url" content="www.joaommota.com" />
+
                 {/* <!-- Open Graph / Facebook --> */}
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://joaommota.com/" />
