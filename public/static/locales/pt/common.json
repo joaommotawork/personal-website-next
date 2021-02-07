@@ -12,7 +12,7 @@
     "Home": {
         "Text1": "Olá,",
         "Text2": "o meu nome é",
-        "Text3": "Eu sou um Desenvolvedor Web focado em Front-End & Design, a minha paixão é trazer novas experiências a mais pessoas.",
+        "Text3": "Eu sou um Programador Web focado em Front-End & Design, a minha paixão é trazer novas experiências a mais pessoas.",
         "ContactMe": "Contacte-me"
     },
     "AboutMe": {
@@ -35,6 +35,9 @@
     "Gallery": {},
     "Blog": {},
     "Contacts": {
+        "CV": "Curriculum Vitae",
+        "Light": "Claro",
+        "Dark": "Escuro",
         "Name": "Nome",
         "E-Mail": "E-Mail",
         "Subject": "Assunto",

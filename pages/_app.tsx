@@ -26,45 +26,49 @@ const App = ({ Component, pageProps }) => {
     return (
         <Provider>
             <Head>
-                {/* <!-- Primary Meta Tags --> */}
-                <title>João M. Mota Developer</title>
                 <meta
                     name="viewport"
-                    content="initial-scale=1.0, width=device-width"
+                    content="width=device-width, initial-scale=1"
                 />
+                <meta charSet="utf-8" />
+                <link rel="icon" href="/static/favicons/favicon.ico" />
+                <title>João M. Mota Developer</title>
                 <meta name="title" content="João M. Mota Developer" />
+                <meta
+                    property="og:title"
+                    content="João M. Mota Developer"
+                    key="ogtitle"
+                />
                 <meta
                     name="description"
                     content="I'M A FULL-STACK WEB DEVELOPER SPECIALIZING IN FRONT-END & DESIGN, THAT'S PASSIONATE ABOUT BRINGING NEW EXPERIENCES TO MORE PEOPLE."
                 />
-
-                {/* <!-- Open Graph / Linkedin --> */}
-                <meta property="og:title" content="João M. Mota Developer" />
-                <meta
-                    property="og:image"
-                    content="/static/images/DefaultLogo.png"
-                />
                 <meta
                     property="og:description"
                     content="I'M A FULL-STACK WEB DEVELOPER SPECIALIZING IN FRONT-END & DESIGN, THAT'S PASSIONATE ABOUT BRINGING NEW EXPERIENCES TO MORE PEOPLE."
+                    key="ogdesc"
                 />
-                <meta property="og:url" content="www.joaommota.com" />
-
-                {/* <!-- Open Graph / Facebook --> */}
+                <meta
+                    property="og:image"
+                    content="/static/images/DefaultLogo.png"
+                    key="ogimage"
+                />
+                <meta
+                    property="og:url"
+                    content="www.joaommota.com"
+                    key="ogurl"
+                />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://joaommota.com/" />
-                <meta property="og:title" content="João M. Mota Developer" />
                 <meta
-                    property="og:description"
-                    content="I'M A FULL-STACK WEB DEVELOPER SPECIALIZING IN FRONT-END & DESIGN, THAT'S PASSIONATE ABOUT BRINGING NEW EXPERIENCES TO MORE PEOPLE."
+                    property="og:site_name"
+                    content="João M. Mota Developer"
+                    key="ogsitename"
                 />
                 <meta
-                    property="og:image"
-                    content="/static/images/DefaultLogo.png"
+                    property="twitter:card"
+                    content="summary_large_image"
+                    key="twcard"
                 />
-
-                {/* <!-- Twitter --> */}
-                <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:url" content="https://joaommota.com/" />
                 <meta
                     property="twitter:title"
@@ -78,9 +82,6 @@ const App = ({ Component, pageProps }) => {
                     property="twitter:image"
                     content="/static/images/DefaultLogo.png"
                 />
-
-                {/* <!-- Other --> */}
-                <link rel="icon" href="/favicon.ico" />
                 <link
                     rel="apple-touch-icon"
                     sizes="180x180"

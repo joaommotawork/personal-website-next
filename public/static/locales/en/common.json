@@ -35,6 +35,9 @@
     "Gallery": {},
     "Blog": {},
     "Contacts": {
+        "CV": "Curriculum Vitae",
+        "Light": "Light",
+        "Dark": "Dark",
         "Name": "Name",
         "E-Mail": "E-Mail",
         "Subject": "Subject",

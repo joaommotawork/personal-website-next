@@ -5,21 +5,21 @@ import Layout from '../../general/Layout'
 
 const Skills = ({ t }) => {
     return (
-        <div className="relative mb-64 h-full bg-gray-100">
+        <div className="relative h-full mb-64 bg-gray-100">
             <Layout>
                 <div
                     id="Skills"
                     className="flex flex-col items-center justify-center w-full min-h-screen">
                     <div className="flex flex-col w-full">
                         <div className="flex flex-col py-5">
-                            <div className="text-red-600 text-xl font-bold uppercase md:text-4xl">
+                            <div className="text-xl font-bold text-red-600 uppercase md:text-4xl">
                                 {t('Skills.Developer')}
                             </div>
-                            <div className="grid gap-10 grid-cols-3 py-5 sm:grid-cols-4 xl:grid-cols-7">
+                            <div className="grid grid-cols-3 gap-10 py-5 sm:grid-cols-4 xl:grid-cols-7">
                                 <div className="flex items-center justify-center">
                                     <Image
                                         src={'/static/icons/black/js.svg'}
-                                        alt="JS"
+                                        alt="JavaScript"
                                         width={60}
                                         height={60}
                                         layout="fixed"
@@ -27,8 +27,10 @@ const Skills = ({ t }) => {
                                 </div>
                                 <div className="flex items-center justify-center">
                                     <Image
-                                        src={'/static/icons/black/python.svg'}
-                                        alt="Python"
+                                        src={
+                                            '/static/icons/black/typecript.svg'
+                                        }
+                                        alt="TypeScript"
                                         width={60}
                                         height={60}
                                         layout="fixed"
@@ -81,6 +83,96 @@ const Skills = ({ t }) => {
                                 </div>
                                 <div className="flex items-center justify-center">
                                     <Image
+                                        src={'/static/icons/black/graphql.svg'}
+                                        alt="GraphQL"
+                                        width={60}
+                                        height={60}
+                                        layout="fixed"
+                                    />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <Image
+                                        src={'/static/icons/black/redux.svg'}
+                                        alt="Redux"
+                                        width={60}
+                                        height={60}
+                                        layout="fixed"
+                                    />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <Image
+                                        src={'/static/icons/black/webpack.svg'}
+                                        alt="Webpack"
+                                        width={60}
+                                        height={60}
+                                        layout="fixed"
+                                    />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <Image
+                                        src={'/static/icons/black/gatsbyjs.svg'}
+                                        alt="GatsbyJS"
+                                        width={60}
+                                        height={60}
+                                        layout="fixed"
+                                    />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <Image
+                                        src={'/static/icons/black/vscode.svg'}
+                                        alt="Visual Studio Code"
+                                        width={60}
+                                        height={60}
+                                        layout="fixed"
+                                    />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <Image
+                                        src={'/static/icons/black/git-alt.svg'}
+                                        alt="Git"
+                                        width={60}
+                                        height={60}
+                                        layout="fixed"
+                                    />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <Image
+                                        src={'/static/icons/black/nextjs.svg'}
+                                        alt="NextJS"
+                                        width={150}
+                                        height={80}
+                                        layout="fixed"
+                                    />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <Image
+                                        src={'/static/icons/black/github.svg'}
+                                        alt="GitHub"
+                                        width={60}
+                                        height={60}
+                                        layout="fixed"
+                                    />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <Image
+                                        src={'/static/icons/black/python.svg'}
+                                        alt="Python"
+                                        width={60}
+                                        height={60}
+                                        layout="fixed"
+                                    />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <Image
+                                        src={'/static/icons/black/mysql.svg'}
+                                        alt="MySQL"
+                                        width={150}
+                                        height={80}
+                                        layout="fixed"
+                                    />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <Image
                                         src={'/static/icons/black/java.svg'}
                                         alt="Java"
                                         width={60}
@@ -91,8 +183,17 @@ const Skills = ({ t }) => {
                                 <div className="flex items-center justify-center">
                                     <Image
                                         src={
-                                            '/static/icons/black/MongoDB-01 1.svg'
+                                            '/static/icons/black/postgresql.svg'
                                         }
+                                        alt="PostgreSQL"
+                                        width={60}
+                                        height={60}
+                                        layout="fixed"
+                                    />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <Image
+                                        src={'/static/icons/black/mongodb.svg'}
                                         alt="MongoDB"
                                         width={150}
                                         height={80}
@@ -101,10 +202,64 @@ const Skills = ({ t }) => {
                                 </div>
                                 <div className="flex items-center justify-center">
                                     <Image
+                                        src={'/static/icons/black/python.svg'}
+                                        alt="Python"
+                                        width={60}
+                                        height={60}
+                                        layout="fixed"
+                                    />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <Image
+                                        src={'/static/icons/black/terminal.svg'}
+                                        alt="Terminal"
+                                        width={60}
+                                        height={60}
+                                        layout="fixed"
+                                    />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <Image
+                                        src={'/static/icons/black/macos.svg'}
+                                        alt="MacOS"
+                                        width={60}
+                                        height={60}
+                                        layout="fixed"
+                                    />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <Image
+                                        src={'/static/icons/black/linux.svg'}
+                                        alt="Linux"
+                                        width={60}
+                                        height={60}
+                                        layout="fixed"
+                                    />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <Image
                                         src={
-                                            '/static/icons/black/Postgres-01 1.svg'
+                                            '/static/icons/black/archlinux.svg'
                                         }
-                                        alt="PostgreSQL"
+                                        alt="Arch Linux"
+                                        width={60}
+                                        height={60}
+                                        layout="fixed"
+                                    />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <Image
+                                        src={'/static/icons/black/ubuntu.svg'}
+                                        alt="Ubuntu"
+                                        width={60}
+                                        height={60}
+                                        layout="fixed"
+                                    />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <Image
+                                        src={'/static/icons/black/windows.svg'}
+                                        alt="Windows"
                                         width={60}
                                         height={60}
                                         layout="fixed"
@@ -113,10 +268,10 @@ const Skills = ({ t }) => {
                             </div>
                         </div>
                         <div className="flex flex-col py-5">
-                            <div className="text-red-600 text-xl font-bold uppercase md:text-4xl">
+                            <div className="text-xl font-bold text-red-600 uppercase md:text-4xl">
                                 {t('Skills.Designer')}
                             </div>
-                            <div className="grid gap-10 grid-cols-3 py-5 sm:grid-cols-4 xl:grid-cols-7">
+                            <div className="grid grid-cols-3 gap-10 py-5 sm:grid-cols-4 xl:grid-cols-7">
                                 <div className="flex items-center justify-center">
                                     <Image
                                         src={'/static/icons/black/figma.svg'}
@@ -129,7 +284,7 @@ const Skills = ({ t }) => {
                                 <div className="flex items-center justify-center">
                                     <Image
                                         src={
-                                            '/static/icons/black/Illustrator_8. Illustrator 1.svg'
+                                            '/static/icons/black/adobe-illustrator.svg'
                                         }
                                         alt="Adobe Illustrator"
                                         width={60}
@@ -140,7 +295,7 @@ const Skills = ({ t }) => {
                                 <div className="flex items-center justify-center">
                                     <Image
                                         src={
-                                            '/static/icons/black/Photoshop_17. Photoshop 1.svg'
+                                            '/static/icons/black/adobe-photoshop.svg'
                                         }
                                         alt="Adobe Photoshop"
                                         width={60}
@@ -151,7 +306,7 @@ const Skills = ({ t }) => {
                                 <div className="flex items-center justify-center">
                                     <Image
                                         src={
-                                            '/static/icons/black/Lightroom Classic_Lightroom Classic 1.svg'
+                                            '/static/icons/black/adobe-lightroom.svg'
                                         }
                                         alt="Adobe Lightroom"
                                         width={60}
@@ -162,7 +317,7 @@ const Skills = ({ t }) => {
                                 <div className="flex items-center justify-center">
                                     <Image
                                         src={
-                                            '/static/icons/black/Premiere Pro_5 Premiere Pro 1.svg'
+                                            '/static/icons/black/adobe-premiere-pro.svg'
                                         }
                                         alt="Adobe Premiere Pro"
                                         width={60}
@@ -173,7 +328,7 @@ const Skills = ({ t }) => {
                                 <div className="flex items-center justify-center">
                                     <Image
                                         src={
-                                            '/static/icons/black/After Effects_2 After Effects 1.svg'
+                                            '/static/icons/black/adobe-after-effects.svg'
                                         }
                                         alt="Adobe After Effects"
                                         width={60}
@@ -184,10 +339,19 @@ const Skills = ({ t }) => {
                             </div>
                         </div>
                         <div className="flex flex-col py-5">
-                            <div className="text-red-600 text-xl font-bold uppercase md:text-4xl">
+                            <div className="text-xl font-bold text-red-600 uppercase md:text-4xl">
                                 {t('Skills.Other')}
                             </div>
-                            <div className="grid gap-10 grid-cols-3 py-5 sm:grid-cols-4 xl:grid-cols-7">
+                            <div className="grid grid-cols-3 gap-10 py-5 sm:grid-cols-4 xl:grid-cols-7">
+                                <div className="flex items-center justify-center">
+                                    <Image
+                                        src={'/static/icons/black/agile.svg'}
+                                        alt="Agile"
+                                        width={60}
+                                        height={80}
+                                        layout="fixed"
+                                    />
+                                </div>
                                 <div className="flex items-center justify-center">
                                     <Image
                                         src={'/static/icons/black/jira.svg'}
@@ -229,7 +393,7 @@ const Skills = ({ t }) => {
                     </div>
                 </div>
             </Layout>
-            <div className="min-w-screen absolute -bottom-64 w-full">
+            <div className="absolute w-full min-w-screen -bottom-64">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     preserveAspectRatio="none"
