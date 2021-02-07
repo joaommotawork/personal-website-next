@@ -50,7 +50,7 @@ const App = ({ Component, pageProps }) => {
                 />
                 <meta
                     property="og:image"
-                    content="/static/images/DefaultLogo.png"
+                    content="https://raw.githubusercontent.com/joaommotawork/joaommota-next-website/main/public/static/images/DefaultLogo.png"
                     key="ogimage"
                 />
                 <meta
@@ -80,7 +80,7 @@ const App = ({ Component, pageProps }) => {
                 />
                 <meta
                     property="twitter:image"
-                    content="/static/images/DefaultLogo.png"
+                    content="https://raw.githubusercontent.com/joaommotawork/joaommota-next-website/main/public/static/images/DefaultLogo.png"
                 />
                 <link
                     rel="apple-touch-icon"
