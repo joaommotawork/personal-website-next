@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Slide from 'react-reveal/Slide'
 
 import { withTranslation } from '../../../i18n'
 import Layout from '../../general/Layout'
@@ -12,259 +13,357 @@ const Skills = ({ t }) => {
                     className="flex flex-col items-center justify-center w-full min-h-screen">
                     <div className="flex flex-col w-full">
                         <div className="flex flex-col py-5">
-                            <div className="text-xl font-bold text-red-600 uppercase md:text-4xl">
-                                {t('Skills.Developer')}
-                            </div>
+                            <Slide right>
+                                <div className="text-xl font-bold text-red-600 uppercase md:text-4xl">
+                                    {t('Skills.Developer')}
+                                </div>
+                            </Slide>
                             <div className="grid grid-cols-3 gap-10 py-5 sm:grid-cols-4 xl:grid-cols-7">
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/js.svg'}
-                                        alt="JavaScript"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={
-                                            '/static/icons/black/typecript.svg'
-                                        }
-                                        alt="TypeScript"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/react.svg'}
-                                        alt="React"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/node-js.svg'}
-                                        alt="NodeJS"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/html5.svg'}
-                                        alt="HTML5"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/css3-alt.svg'}
-                                        alt="CSS3"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/sass.svg'}
-                                        alt="SASS"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/graphql.svg'}
-                                        alt="GraphQL"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/redux.svg'}
-                                        alt="Redux"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/webpack.svg'}
-                                        alt="Webpack"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/gatsbyjs.svg'}
-                                        alt="GatsbyJS"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/vscode.svg'}
-                                        alt="Visual Studio Code"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/git-alt.svg'}
-                                        alt="Git"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/nextjs.svg'}
-                                        alt="NextJS"
-                                        width={150}
-                                        height={80}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/github.svg'}
-                                        alt="GitHub"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/python.svg'}
-                                        alt="Python"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/mysql.svg'}
-                                        alt="MySQL"
-                                        width={150}
-                                        height={80}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/java.svg'}
-                                        alt="Java"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={
-                                            '/static/icons/black/postgresql.svg'
-                                        }
-                                        alt="PostgreSQL"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/mongodb.svg'}
-                                        alt="MongoDB"
-                                        width={150}
-                                        height={80}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/python.svg'}
-                                        alt="Python"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/terminal.svg'}
-                                        alt="Terminal"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/macos.svg'}
-                                        alt="MacOS"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/linux.svg'}
-                                        alt="Linux"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={
-                                            '/static/icons/black/archlinux.svg'
-                                        }
-                                        alt="Arch Linux"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/ubuntu.svg'}
-                                        alt="Ubuntu"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
-                                <div className="flex items-center justify-center">
-                                    <Image
-                                        src={'/static/icons/black/windows.svg'}
-                                        alt="Windows"
-                                        width={60}
-                                        height={60}
-                                        layout="fixed"
-                                    />
-                                </div>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={'/static/icons/black/js.svg'}
+                                            alt="JavaScript"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/typecript.svg'
+                                            }
+                                            alt="TypeScript"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/react.svg'
+                                            }
+                                            alt="React"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/node-js.svg'
+                                            }
+                                            alt="NodeJS"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/html5.svg'
+                                            }
+                                            alt="HTML5"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/css3-alt.svg'
+                                            }
+                                            alt="CSS3"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={'/static/icons/black/sass.svg'}
+                                            alt="SASS"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/graphql.svg'
+                                            }
+                                            alt="GraphQL"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/redux.svg'
+                                            }
+                                            alt="Redux"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/webpack.svg'
+                                            }
+                                            alt="Webpack"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/gatsbyjs.svg'
+                                            }
+                                            alt="GatsbyJS"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/vscode.svg'
+                                            }
+                                            alt="Visual Studio Code"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/git-alt.svg'
+                                            }
+                                            alt="Git"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/nextjs.svg'
+                                            }
+                                            alt="NextJS"
+                                            width={150}
+                                            height={80}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/github.svg'
+                                            }
+                                            alt="GitHub"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/python.svg'
+                                            }
+                                            alt="Python"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/mysql.svg'
+                                            }
+                                            alt="MySQL"
+                                            width={150}
+                                            height={80}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={'/static/icons/black/java.svg'}
+                                            alt="Java"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/postgresql.svg'
+                                            }
+                                            alt="PostgreSQL"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/mongodb.svg'
+                                            }
+                                            alt="MongoDB"
+                                            width={150}
+                                            height={80}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/python.svg'
+                                            }
+                                            alt="Python"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/terminal.svg'
+                                            }
+                                            alt="Terminal"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/macos.svg'
+                                            }
+                                            alt="MacOS"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/linux.svg'
+                                            }
+                                            alt="Linux"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/archlinux.svg'
+                                            }
+                                            alt="Arch Linux"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/ubuntu.svg'
+                                            }
+                                            alt="Ubuntu"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div className="flex items-center justify-center">
+                                        <Image
+                                            src={
+                                                '/static/icons/black/windows.svg'
+                                            }
+                                            alt="Windows"
+                                            width={60}
+                                            height={60}
+                                            layout="fixed"
+                                        />
+                                    </div>
+                                </Slide>
                             </div>
                         </div>
                         <div className="flex flex-col py-5">

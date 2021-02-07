@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Slide from 'react-reveal/Slide'
 
 import { withTranslation } from '../../../i18n'
 import Layout from '../../general/Layout'
@@ -12,39 +13,45 @@ const AboutMe = ({ t }) => {
                     className="flex flex-col items-center justify-center w-full min-h-screen">
                     <div className="flex flex-col items-center justify-center 2xl:flex-row">
                         <div className="flex flex-col w-full">
-                            <div className="flex flex-col py-5">
-                                <div className="text-xl font-bold text-red-600 uppercase md:text-4xl">
-                                    {t('AboutMe.EducationWork')}
+                            <Slide left>
+                                <div className="flex flex-col py-5">
+                                    <div className="text-xl font-bold text-red-600 uppercase md:text-4xl">
+                                        {t('AboutMe.EducationWork')}
+                                    </div>
+                                    <div className="text-base text-black uppercase font-open md:text-xl">
+                                        {t('AboutMe.EducationWork1')}
+                                    </div>
+                                    <div className="text-base text-black uppercase font-open md:text-xl">
+                                        {t('AboutMe.EducationWork2')}
+                                    </div>
                                 </div>
-                                <div className="text-base text-black uppercase font-open md:text-xl">
-                                    {t('AboutMe.EducationWork1')}
+                            </Slide>
+                            <Slide left>
+                                <div className="flex flex-col py-5">
+                                    <div className="text-xl font-bold text-red-600 uppercase md:text-4xl">
+                                        {t('AboutMe.Principles')}
+                                    </div>
+                                    <div className="text-base text-black uppercase font-open md:text-xl">
+                                        {t('AboutMe.Principles1')}
+                                    </div>
+                                    <div className="text-base text-black uppercase font-open md:text-xl">
+                                        {t('AboutMe.Principles2')}
+                                    </div>
                                 </div>
-                                <div className="text-base text-black uppercase font-open md:text-xl">
-                                    {t('AboutMe.EducationWork2')}
+                            </Slide>
+                            <Slide left>
+                                <div className="flex flex-col py-5">
+                                    <div className="text-xl font-bold text-red-600 uppercase md:text-4xl">
+                                        {t('AboutMe.Fun')}
+                                    </div>
+                                    <div className="text-base text-black uppercase font-open md:text-xl">
+                                        {t('AboutMe.Fun1')}
+                                    </div>
+                                    <div className="text-base text-black uppercase font-open md:text-xl">
+                                        {t('AboutMe.Fun2')}
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="flex flex-col py-5">
-                                <div className="text-xl font-bold text-red-600 uppercase md:text-4xl">
-                                    {t('AboutMe.Principles')}
-                                </div>
-                                <div className="text-base text-black uppercase font-open md:text-xl">
-                                    {t('AboutMe.Principles1')}
-                                </div>
-                                <div className="text-base text-black uppercase font-open md:text-xl">
-                                    {t('AboutMe.Principles2')}
-                                </div>
-                            </div>
-                            <div className="flex flex-col py-5">
-                                <div className="text-xl font-bold text-red-600 uppercase md:text-4xl">
-                                    {t('AboutMe.Fun')}
-                                </div>
-                                <div className="text-base text-black uppercase font-open md:text-xl">
-                                    {t('AboutMe.Fun1')}
-                                </div>
-                                <div className="text-base text-black uppercase font-open md:text-xl">
-                                    {t('AboutMe.Fun2')}
-                                </div>
-                            </div>
+                            </Slide>
                         </div>
                         <div className="flex items-center justify-center w-1/2">
                             <Image
