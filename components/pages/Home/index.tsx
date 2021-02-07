@@ -1,8 +1,7 @@
 import Image from 'next/image'
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse'
-import Typed from 'react-typed'
-import { animateScroll as scroll, Link as ScrollLink } from 'react-scroll'
+import { Link as ScrollLink } from 'react-scroll'
 
 import { withTranslation } from '../../../i18n'
 import Layout from '../../general/Layout'
@@ -15,18 +14,10 @@ const Home = ({ t }) => {
                 className="flex flex-col items-center justify-center w-full h-full 2xl:flex-row md:pt-0">
                 <div className="flex flex-col w-full">
                     <div className="py-3 text-2xl font-bold text-white uppercase md:py-5 md:text-6xl">
-                        <Typed
-                            strings={[t('Home.Text1')]}
-                            typeSpeed={30}
-                            showCursor={false}
-                        />
+                        {t('Home.Text1')}
                     </div>
                     <div className="py-3 text-2xl font-bold text-white uppercase md:py-5 md:text-6xl">
-                        <Typed
-                            strings={[t('Home.Text2')]}
-                            typeSpeed={30}
-                            showCursor={false}
-                        />
+                        {t('Home.Text2')}
                     </div>
                     <Pulse>
                         <div className="py-3 text-2xl font-bold text-red-600 uppercase animate-pulse md:py-5 md:text-6xl">
