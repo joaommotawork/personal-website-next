@@ -235,17 +235,6 @@ const Skills = ({ t }) => {
                                     <div className="flex items-center justify-center">
                                         <Image
                                             src={
-                                                '/static/icons/black/python.svg'
-                                            }
-                                            alt="Python"
-                                            width={60}
-                                            height={60}
-                                            layout="fixed"
-                                        />
-                                    </div>
-                                    <div className="flex items-center justify-center">
-                                        <Image
-                                            src={
                                                 '/static/icons/black/terminal.svg'
                                             }
                                             alt="Terminal"
