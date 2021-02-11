@@ -45,28 +45,28 @@ const Contacts = ({ t }) => {
                     {t('Contacts.CV')}
                 </div>
                 <div className="flex flex-col w-full mt-8">
-                    <button className="w-full px-4 py-2 mt-5 font-bold text-white uppercase bg-red-600 font-open">
-                        <a
-                            href={`/static/cv/CV${
-                                i18n.language === 'en' ? 'EN' : 'PT'
-                            }Light.pdf`}
-                            download={`João M. Mota - Curriculum Vitae ${
-                                i18n.language === 'en' ? 'EN' : 'PT'
-                            } Light`}>
+                    <a
+                        href={`/static/cv/CV${
+                            i18n.language === 'en' ? 'EN' : 'PT'
+                        }Light.pdf`}
+                        download={`João M. Mota - Curriculum Vitae ${
+                            i18n.language === 'en' ? 'EN' : 'PT'
+                        } Light`}>
+                        <button className="w-full px-4 py-2 mt-5 font-bold text-white uppercase bg-red-600 font-open">
                             {t('Contacts.Light')}
-                        </a>
-                    </button>
-                    <button className="w-full px-4 py-2 mt-5 font-bold text-white uppercase bg-red-600 font-open">
-                        <a
-                            href={`/static/cv/CV${
-                                i18n.language === 'en' ? 'EN' : 'PT'
-                            }Dark.pdf`}
-                            download={`João M. Mota - Curriculum Vitae ${
-                                i18n.language === 'en' ? 'EN' : 'PT'
-                            } Light`}>
+                        </button>
+                    </a>
+                    <a
+                        href={`/static/cv/CV${
+                            i18n.language === 'en' ? 'EN' : 'PT'
+                        }Dark.pdf`}
+                        download={`João M. Mota - Curriculum Vitae ${
+                            i18n.language === 'en' ? 'EN' : 'PT'
+                        } Light`}>
+                        <button className="w-full px-4 py-2 mt-5 font-bold text-white uppercase bg-red-600 font-open">
                             {t('Contacts.Dark')}
-                        </a>
-                    </button>
+                        </button>
+                    </a>
                 </div>
             </div>
             <form
