@@ -40,7 +40,7 @@ const Contacts = ({ t }) => {
         <div
             id="Contacts"
             className={`relative bg-background-pattern bg-fixed bg-cover flex flex-col items-center justify-center p-5 lg:flex-row md:px-32 pb-32`}>
-            <div className="flex flex-col items-center justify-center w-2/3 mb-10 md:p-16">
+            {/* <div className="flex flex-col items-center justify-center w-2/3 mb-10 md:p-16">
                 <div className="text-xl font-bold text-center text-white uppercase md:text-4xl">
                     {t('Contacts.CV')}
                 </div>
@@ -68,7 +68,7 @@ const Contacts = ({ t }) => {
                         </button>
                     </a>
                 </div>
-            </div>
+            </div> */}
             <form
                 className="flex flex-col w-full"
                 onSubmit={handleSubmit(onSubmit)}>
