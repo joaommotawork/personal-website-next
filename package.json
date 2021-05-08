@@ -20,7 +20,7 @@
         "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
     },
     "dependencies": {
-        "airtable": "^0.10.1",
+        "airtable": "^0.11.0",
         "next": "10.2.0",
         "next-i18next": "^7.0.1",
         "prettier-plugin-tailwind": "^2.2.10",
