@@ -1,0 +1,141 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"files": {
+		"includes": ["**", "!biome/plugins/fixtures", "!next-env.d.ts"]
+	},
+	"formatter": {
+		"enabled": true
+	},
+	"css": {
+		"parser": {
+			"tailwindDirectives": true
+		}
+	},
+	"plugins": [
+		"./biome/plugins/react-display-name.grit",
+		"./biome/plugins/react-no-deprecated.grit",
+		"./biome/plugins/react-no-find-dom-node.grit",
+		"./biome/plugins/react-no-is-mounted.grit",
+		"./biome/plugins/react-no-unescaped-entities.grit",
+		"./biome/plugins/react-require-render-return.grit"
+	],
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"preset": "none",
+			"a11y": {
+				"noAccessKey": "error",
+				"noAriaUnsupportedElements": "error",
+				"noAutofocus": "error",
+				"noDistractingElements": "error",
+				"noHeaderScope": "error",
+				"noInteractiveElementToNoninteractiveRole": "error",
+				"noLabelWithoutControl": "error",
+				"noNoninteractiveElementInteractions": "error",
+				"noNoninteractiveElementToInteractiveRole": "error",
+				"noNoninteractiveTabindex": "error",
+				"noPositiveTabindex": "error",
+				"noRedundantAlt": "error",
+				"noRedundantRoles": "error",
+				"noStaticElementInteractions": "error",
+				"useAltText": "error",
+				"useAnchorContent": "error",
+				"useAriaActivedescendantWithTabindex": "error",
+				"useAriaPropsForRole": "error",
+				"useAriaPropsSupportedByRole": "error",
+				"useFocusableInteractive": "error",
+				"useHeadingContent": "error",
+				"useHtmlLang": "error",
+				"useIframeTitle": "error",
+				"useKeyWithClickEvents": "error",
+				"useKeyWithMouseEvents": "error",
+				"useMediaCaption": "error",
+				"useValidAnchor": "error",
+				"useValidAriaProps": "error",
+				"useValidAriaRole": "error",
+				"useValidAriaValues": "error",
+				"useValidAutocomplete": "error"
+			},
+			"complexity": {
+				"noArguments": "error",
+				"noBannedTypes": "error",
+				"noUselessThisAlias": "error",
+				"useArrowFunction": "off"
+			},
+			"correctness": {
+				"noChildrenProp": "error",
+				"noConstAssign": "off",
+				"noGlobalObjectCalls": "off",
+				"noInvalidBuiltinInstantiation": "off",
+				"noInvalidConstructorSuper": "off",
+				"noRenderReturnValue": "error",
+				"noSetterReturn": "off",
+				"noUndeclaredVariables": "off",
+				"noUnreachable": "off",
+				"noUnreachableSuper": "off",
+				"noUnusedVariables": {
+					"level": "warn",
+					"options": {
+						"ignoreRestSiblings": false,
+						"ignoreUsingDeclarations": false
+					}
+				},
+				"useJsxKeyInIterable": "error",
+				"useValidTypeof": "off"
+			},
+			"nursery": {
+				"noReactDirectStateMutation": "error",
+				"useConsistentUnicodeBom": "off",
+				"useControlLabel": "off",
+				"useExplicitReturnType": "off",
+				"useExplicitType": "warn"
+			},
+			"security": {
+				"noBlankTarget": "error",
+				"noDangerouslySetInnerHtmlWithChildren": "error"
+			},
+			"style": {
+				"noCommonJs": "off",
+				"noInferrableTypes": "error",
+				"noNamespace": "error",
+				"noNonNullAssertion": "warn",
+				"useArrayLiterals": "error",
+				"useAsConstAssertion": "error",
+				"useBlockStatements": "off",
+				"useConsistentArrowReturn": "off",
+				"useConst": "error",
+				"useSpreadOverApply": "error"
+			},
+			"suspicious": {
+				"noCommentText": "error",
+				"noDuplicateClassMembers": "off",
+				"noDuplicateJsxProps": "error",
+				"noDuplicateObjectKeys": "off",
+				"noDuplicateParameters": "off",
+				"noEmptyBlockStatements": "error",
+				"noEmptyInterface": "error",
+				"noExplicitAny": "warn",
+				"noExtraNonNullAssertion": "error",
+				"noFunctionAssign": "off",
+				"noImportAssign": "off",
+				"noMisleadingInstantiator": "error",
+				"noNonNullAssertedOptionalChain": "error",
+				"noReactStringRefs": "error",
+				"noRedeclare": "off",
+				"noTsIgnore": "error",
+				"noUnknownAttribute": "error",
+				"noUnsafeNegation": "off",
+				"noUnusedExpressions": "warn",
+				"noVar": "error",
+				"useAdjacentOverloadSignatures": "error",
+				"useGetterReturn": "off",
+				"useNamespaceKeyword": "error"
+			}
+		}
+	}
+}
