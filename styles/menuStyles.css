@@ -1,27 +1,27 @@
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 *:active,
 *:focus {
-    outline: none !important;
-    text-decoration: none !important;
-    box-shadow: none !important;
+	outline: none !important;
+	text-decoration: none !important;
+	box-shadow: none !important;
 }
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-    position: fixed;
-    width: 50px;
-    height: 40px;
-    right: 150px;
-    top: 75px;
+	position: fixed;
+	width: 50px;
+	height: 40px;
+	right: 150px;
+	top: 75px;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-    background: #ffffff;
-    height: 5px !important;
+	background: #ffffff;
+	height: 5px !important;
 }
 
 /* Color/shape of burger icon bars on hover*/
@@ -36,7 +36,7 @@ html {
 
 /* Color/shape of close button cross */
 .bm-cross {
-    background: #ffffff;
+	background: #ffffff;
 }
 
 /*
@@ -44,42 +44,42 @@ Sidebar wrapper styles
 Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
 */
 .bm-menu-wrap {
-    position: fixed;
-    height: 80%;
-    width: 100%;
+	position: fixed;
+	height: 80%;
+	width: 100%;
 }
 
 /* General sidebar styles */
 .bm-menu {
-    background: #000000;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
+	background: #000000;
+	padding: 2.5em 1.5em 0;
+	font-size: 1.15em;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-    fill: #000000;
+	fill: #000000;
 }
 
 /* Wrapper for item list */
 .bm-item-list {
-    color: #ffffff;
-    padding: 0.8em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+	color: #ffffff;
+	padding: 0.8em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 }
 
 /* Individual item */
 .bm-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Styling of overlay */
 .bm-overlay {
-    background: rgba(0, 0, 0, 0.75);
+	background: rgba(0, 0, 0, 0.75);
 }
